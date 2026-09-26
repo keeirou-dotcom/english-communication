@@ -1050,7 +1050,7 @@ function App() {
             {!pendingImage ? (
               <label className="upload-label" style={{ marginTop: 12 }}>
                 📷 写真を撮る・選ぶ
-                <input ref={fileInputRef} type="file" accept="image/*" capture="environment" onChange={handleFileChange} />
+                <input ref={fileInputRef} type="file" accept="image/*" onChange={handleFileChange} />
               </label>
             ) : (
               <img src={pendingImage} className="full-img" alt="preview" />
